@@ -1,0 +1,80 @@
+/* Reset default margin and padding for consistency */
+body,
+h1,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 20px;
+}
+
+.gallery-container {
+    display: block;
+}
+
+.gallery-item {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+header,
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+}
+
+h4 {
+    margin-left : 20px;
+}
+
+.komentar {
+    margin-left : 40px;
+}
+
+.kontak {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.sosial-media {
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    .gallery-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .kontak {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
